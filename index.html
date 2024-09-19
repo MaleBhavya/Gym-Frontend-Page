@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavya Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet">
+<style>
+    /* CSS Reset */
+    body{
+        font-family: "Baloo Bhai 2", sans-serif;
+  
+    margin: 0px;
+    padding: 0px;
+    background: url('img/sven-mieke-jO6vBWX9h9Y-unsplash.jpg');
+    background-size: cover;
+    color: white;
+}
+.left
+{
+   
+    position: absolute;
+    left:34px;
+    top:20px;
+    padding:0px;
+     /* border: 2px solid red; */
+     display:inline-block;
+}
+.right
+{
+    position: absolute;
+    right:34px;
+    top:35px;
+    /* border: 2px solid white; */
+    display:inline-block;
+}
+.mid
+{
+    position: absolute;
+    right: 100px;
+    top:2px;
+    font-size:20px;
+    padding-right:20px;
+    margin: 20px auto;
+    /* display:block; */
+    width:60%;
+    /* border: 2px solid green; */
+}
+/* .navbar
+{
+    display:inline-block;
+
+} */
+.navbar li 
+{
+    
+    display:inline-block;
+    font-size:20px;
+}
+.navbar li a
+{
+    text-decoration: none;
+    color: white;
+    padding:3px 10px;
+    
+}
+.navbar li a:hover{
+   text-decoration: underline;
+    color: grey;
+}
+.left img{
+    display:block;
+    margin:auto;
+    height:50px;
+    width:60px;
+    filter:invert(100%);
+}
+.left div{
+    font-size: 18px;
+    font-family: "Baloo Bhai 2", sans-serif;
+   
+}
+.btn
+{
+    font-family: "Baloo Bhai 2", sans-serif;
+   
+    margin-right:7px;
+    padding:2px;
+    border-radius:20px;
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    border:2px solid white;
+   
+
+}
+.container
+{
+    height:50%;
+    border:2px solid white;
+    position: absolute;
+    left: 50px;
+    top:200px;
+    padding:2px 20px 20px 20px;
+    border-radius: 10px;
+    width:40%;
+     /* border: 2px solid red; */
+     display:inline-block;
+     margin:auto;
+}
+.btn:hover{
+    color: grey;
+}
+.form-group input{
+    
+    text-align: center;
+    margin:10px auto;
+    display: block;
+    width: 200px;
+    border-radius: 10px;
+    border:2px solid black;
+    padding: 6px 2px 2px 2px;
+    font-family: "Baloo Bhai 2", sans-serif;
+}
+.container h1{
+    border:2px solid white;
+    border-radius: 10px;
+    text-align: center;;
+    font-family: "Baloo Bhai 2", sans-serif;
+}
+#submit{
+    border-radius: 10px;
+    font-family: "Baloo Bhai 2", sans-serif;
+    text-align: center;
+    margin:4px auto;
+    margin-bottom: 4px;;
+    display: block;
+    width:30%;
+}
+.placeholder
+{
+    color: black;
+}
+</style>
+
+<body>
+   <header class="header">
+    <div class="left">
+     <img src="img/logo.jpg" alt="Unable to load">
+     <div>Bhavya's Fitness</div>
+    </div>
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">FitnessCalculator</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+    </div>
+    <div class="right">
+       <button class="btn">Call Us Now</button>
+       <button class="btn">Email</button>
+    </div>
+   </header>
+   <div class="container">
+    <h1>Join Best Gym of Nalgonda now</h1>
+    <form action="action.php">
+        <div class="form-group">
+            <input type="text" name="type" placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="type" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="type" placeholder="Enter your Gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="type" placeholder="Enter your Place">
+        </div>
+        <button class="btn" id="submit">Submit</button>
+        
+    </form>
+   </div>
+</body>
+</html>
